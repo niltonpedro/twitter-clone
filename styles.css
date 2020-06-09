@@ -1,29 +1,120 @@
-html, body, #app{
-  height: 100%;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#app{
-  display: flex; 
+input, button {
+  outline: 0;
 }
 
-.box {
-  width: 200px;
-  height: 60px;
-  margin: 5px;
+body {
+  background: #E6ECF0;
+  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+
+}
+header {
+  background: #FFF;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  justify-content: space-around;
+  box-shadow: 0 0 10px #777777;
+  flex: 1;
+  position: relative;
+  z-index: 1;
 }
 
-.red {
-  order: 2;
-  background: #f00;
+div.menus{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: #667580;
 }
 
-.green {
-  order: 1;
-  background: #0f0;
+div.home img {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+div.home span {
+  margin-top: 2px;
 }
 
-.blue {
-  order: 0;
-  background: #00f;
+div.notifications {
+  margin: 0 30px
+}
+div.notifications img {
+  margin-right: 5px;
+  
+}
+
+div.messages img {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+div.search {
+  display: flex;
+  align-items: center;
+}
+
+div.search .input {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  background-color: #F5F8FA;
+  border-radius: 25px;
+}
+
+div.search .input input {
+  background-color: #F7F8FB;
+  border: none;
+  padding: 5px;
+  color: #707070;
+}
+
+div.search .input .icon {
+  fill: #707070;
+  width: 13px;
+  height: 13px;
+
+}
+
+div.search .profile {
+  height: 36px;
+  width: 36px;
+  margin: 0 15px;
+}
+div.search button {
+  height: 34px;
+  width: 90px;
+  background: #3BB9E3;
+  padding: 10px 40px;
+  border: 0;
+  border-radius: 16px;
+
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3BB9E3;
+  height: 380px;
+  width: 100%;
+  color: #FFF;
 }
